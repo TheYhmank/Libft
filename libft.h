@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 09:40:46 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/22 17:59:35 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/22 19:57:33 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,13 @@ char *ft_strrchr(const char *s, int c);
 int ft_tolower(int str);
 int	ft_toupper(int str);
 
+
+// save this info
+// vi .gitignore this commit to say your git which files you do not what to push
+// ls -a see hidden files
+// git add -A is better then git add *
+// git add . to add modified files
+// git push && git push github add in both ways
+//
 
 #endif 
