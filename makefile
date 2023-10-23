@@ -27,7 +27,7 @@ files = ft_atoi.c \
 
 Compiler = gcc
 
-CmpFlags = -Wall -Wexta -Werror
+CmpFlags = -Wall -Wextra -Werror
 
 OUTN	= $(Library).a
 

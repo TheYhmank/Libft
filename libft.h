@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 09:40:46 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/22 19:57:33 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:36:46 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void *ft_memset(void *s, int c, size_t n);
 char *ft_strchr(const char *s, int c);
 int	ft_strcmp(const char *a, const char *b);
 char	*ft_strdup(const char *src);
-size_t ft_strlcpy(char *dst, const char *src, size_t size);
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 int ft_strncmp(const char *s1, const char *s2, size_t n);

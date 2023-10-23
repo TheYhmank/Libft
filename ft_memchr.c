@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 18:20:00 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/22 15:36:01 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:06:33 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,4 @@ void *ft_memchr(const void *s, int c, size_t n)
         i++;
     }
     return (NULL);
-}
-
-int main(void)
-{
-    char s[] = "jcxlkvjlk lsdkjf l";
-    char *res = ft_memchr(s, 'x', 6);
-    printf("%s", res);
-    return (0);
-    
 }
