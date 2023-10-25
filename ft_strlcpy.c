@@ -6,16 +6,16 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 18:50:10 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/23 15:36:18 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/25 08:46:24 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-    size_t i;
-	size_t src_len;
+	size_t	i;
+	size_t	src_len;
 
 	i = 0;
 	if (!dst || !src)
