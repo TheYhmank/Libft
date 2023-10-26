@@ -6,13 +6,13 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:53:39 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/25 14:15:25 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:57:48 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	altdst;
 	size_t	altsrc;
@@ -34,3 +34,4 @@ size_t	strlcat(char *dst, const char *src, size_t size)
 		dst[i] = '\0';
 	return (altdst + altsrc);
 }
+// u

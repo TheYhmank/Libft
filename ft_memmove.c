@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 18:44:08 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/25 14:35:17 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:17:08 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,24 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*temp1;
-	unsigned char	*temp2;
-
-	temp1 = dest;
-	temp2 = (unsigned char *)src;
-	if (dest < src)
-		return (ft_memcpy(dest, src, n));
-	if (dest > src)
+	const unsigned char *altsrc;
+	unsigned char *altdest;
+	size_t i;
+	
+	altdest = (unsigned char *)dest;
+	altsrc = (const unsigned char *)src;
+	if (altdest == NULL || altsrc == NULL)
+		return (NULL);
+	if(altdest < altsrc)
 	{
-		while (n--)
+		i = n;
+		while (i > 0)
 		{
-			temp1[n] = temp2[n];
+			altdest[i] = altsrc[i];
+			i--;
 		}
 	}
+	else
+		ft_memcpy(altdest, altsrc, n);
 	return (dest);
 }

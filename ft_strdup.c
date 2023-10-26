@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:29:52 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/26 12:56:48 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:57:40 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,4 @@ char	*ft_strdup(const char *src)
 	new[i] = '\0';
 	return (new);
 }
-
-int main(void)
-{
-	
-}
+// u

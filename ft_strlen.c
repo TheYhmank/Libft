@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 09:36:17 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/19 19:20:22 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/26 14:24:23 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	while (*str)
-	{
+	while (*str++)
 		i++;
-		str++;
-	}
 	return (i);
 }
