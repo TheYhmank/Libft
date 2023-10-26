@@ -6,13 +6,13 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 17:44:03 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/23 15:47:45 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/25 14:51:05 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-  	ft_memset(s, '0', n);
+	ft_memset(s, '0', n);
 }
