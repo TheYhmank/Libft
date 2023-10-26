@@ -17,8 +17,8 @@ files = ft_atoi.c \
 		ft_strcmp.c \
 		ft_strdup.c \
 		ft_strlcat.c \
-		ft_strlcpy \
-		ft_strlen \
+		ft_strlcpy.c \
+		ft_strlen.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
@@ -33,7 +33,7 @@ OUTN	= $(Library).a
 
 CFILES	= $(files:%=%.c)
 
-OFILES	= $(files:%=%.o)
+OFILES	= $(files:.c=.o)
 
 NAME	= $(OUTN)
 
