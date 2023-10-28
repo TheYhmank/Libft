@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 09:40:46 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/26 16:37:09 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:42:54 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <string.h>
 # include <strings.h>
 # include <stdlib.h>
-// # include <unistd.h>
+# include <unistd.h>
 # include <stdio.h> // udali aaaaaaa
 
 int	ft_atoi(const char *str);
