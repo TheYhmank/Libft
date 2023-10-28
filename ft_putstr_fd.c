@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:21 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/27 18:43:19 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/28 17:42:56 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void ft_putstr_fd(char *s, int fd)
 {
-    int i;
+    size_t i;
 
     i = 0;
     while (s[i])
