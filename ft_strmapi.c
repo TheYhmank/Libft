@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:32 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/28 18:57:39 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/30 10:36:19 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-int main(void)
+/*
+char ft_function(unsigned int b, char i)
 {
-    char str[] = "asdkjf";
-    char *res = ft_strmapi(str, ft_toupper);
-    printf("%s", res);
-    return (0);    
+	return(b + i);
 }
+*/

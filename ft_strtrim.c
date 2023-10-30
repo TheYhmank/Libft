@@ -6,13 +6,13 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:35 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/28 17:38:17 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/30 12:09:50 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_check(char c, char const *set)
+static int ft_check(char c, char const *set)
 {
     while (*set)
     {
