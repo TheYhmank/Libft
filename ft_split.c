@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:24 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/30 16:00:46 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/31 15:32:49 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,39 +36,34 @@ static void	ft_allocate(char **tab, char const *s, char sep)
 	*tab_p = NULL;
 }
 
-static int ft_total_size(char const *s, char sep)
+static int	ft_total_size(char const *s, char sep)
 {
-    int word_count;
-    
-    word_count = 0;
-    while (*s)
-    {
-        while (*s == sep)
-            ++s;
-        if (*s)
-            ++word_count;
-        while (*s && *s != sep)
-            ++s;
-    }
-    return (word_count);
+	int	word_count;
+
+	word_count = 0;
+	while (*s)
+	{
+		while (*s == sep)
+			++s;
+		if (*s)
+			++word_count;
+		while (*s && *s != sep)
+			++s;
+	}
+	return (word_count);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-    char **new;
-    int size;
+	char	**new;
+	int		size;
 
-    if (!s)
-        return (NULL);
-    size = ft_total_size(s, c);
-    new = (char **)malloc(sizeof(char *) * (size + 1));
-    if (!new)
-        return (NULL);
-    ft_alocate(new, s, c);
-    return (new);
-}
-
-int main(void)
-{
-    
+	if (!s)
+		return (NULL);
+	size = ft_total_size(s, c);
+	new = (char **)malloc(sizeof(char *) * (size + 1));
+	if (!new)
+		return (NULL);
+	ft_allocate(new, s, c);
+	return (new);
 }

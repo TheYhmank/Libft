@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:28 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/30 13:58:34 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/31 15:10:45 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    unsigned int	i;
+	unsigned int	i;
 
 	if (!s || !f)
 		return ;

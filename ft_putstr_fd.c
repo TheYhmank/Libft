@@ -6,17 +6,17 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:07:21 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/28 17:42:56 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/10/31 15:11:57 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (s[i])
-        write(fd, &s[i++], 1);
+	i = 0;
+	while (s[i])
+		write(fd, &s[i++], 1);
 }
