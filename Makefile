@@ -6,13 +6,15 @@
 #    By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/31 12:46:29 by ayermeko          #+#    #+#              #
-#    Updated: 2023/10/31 12:49:42 by ayermeko         ###   ########.fr        #
+#    Updated: 2023/11/03 16:20:57 by ayermeko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Library		= libft
-
-files 	   = ft_isalpha \
+NAME = libft.a
+CC = cc
+CFLAGS = -Wall -Werror -Wextra -g3
+AR = ar rcs
+SRC = ft_isalpha \
 	ft_isdigit \
 	ft_isalnum \
 	ft_isascii \
@@ -45,33 +47,39 @@ files 	   = ft_isalpha \
 	ft_putchar_fd \
 	ft_putstr_fd \
 	ft_putendl_fd \
-	ft_putnbr_fd \
-	
-Compiler	= gcc
+	ft_putnbr_fd
+BONUS_SRC = ft_lstnew \
+	ft_lstadd_front \
+	ft_lstsize \
+	ft_lstlast \
+	ft_lstadd_back \
+	ft_lstdelone \
+	ft_lstclear \
+	ft_lstiter \
+	ft_lstmap  
 
-CmpFlags	= -Wall -Wextra -Werror
+SRCS = $(addsuffix .c, $(SRC))
+OBJS = $(addsuffix .o, $(SRC))
+BONUS_SRCS = $(addsuffix .c, $(BONUS_SRC))
+BONUS_OBJS = $(addsuffix .o, $(BONUS_SRC))
 
-OUTN	= $(Library).a
+.c.o: $(SRCS) $(BONUS_SRCS)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
-CFILES	= $(files:%=%.c)
+$(NAME): $(OBJS)
+	$(AR) $@ $^
 
-OFILES	= $(files:%=%.o)
-
-NAME	= $(OUTN)
-
-$(NAME):
-	$(Compiler) $(CmpFlags) -c $(CFILES) -I./
-	ar -rc $(OUTN) $(OFILES)
+bonus: $(OBJS) $(BONUS_OBJS)
+	$(AR) $(NAME) $^
 
 all: $(NAME)
 
 clean:
-	rm -f $(NAME)
-	rm -f $(OFILES)
+	rm -f *.o
 
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
+re: clean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re bonus
