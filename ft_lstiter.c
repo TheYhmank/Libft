@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:08:03 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/11/04 10:23:35 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/11/04 12:10:07 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,14 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst)
+	t_list	*current;
+
+	if (!lst)
+		return ;
+	current = lst;
+	while (current)
 	{
-		f(lst->content)
-		lst = lst->next;
+		f(current->content);
+		current = current->next;
 	}
 }
