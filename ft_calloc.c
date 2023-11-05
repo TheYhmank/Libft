@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:58:06 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/26 17:31:33 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/11/05 12:30:01 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,18 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*rtn;
+	void	*new;
+	int		total_bytes;
 
-	rtn = malloc(size * nmemb);
-	if (!rtn)
+	if (!nmemb || !size)
+		return (malloc(0));
+	total_bytes = nmemb * size;
+	if (total_bytes / size != nmemb)
 		return (NULL);
-	ft_bzero(rtn, nmemb);
-	return (rtn);
+	new = malloc(size * nmemb);
+	if (!new)
+		return (NULL);
+	ft_bzero(new, nmemb * size);
+	return (new);
 }
 // u

@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:41:40 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/26 15:57:07 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/11/04 13:16:50 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-// u
