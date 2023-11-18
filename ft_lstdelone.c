@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayermeko <ayermko@student.42prague.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 16:11:04 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/11/03 16:53:15 by ayermeko         ###   ########.fr       */
+/*   Created: 2023/11/18 18:32:57 by ayermeko          #+#    #+#             */
+/*   Updated: 2023/11/18 18:33:00 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

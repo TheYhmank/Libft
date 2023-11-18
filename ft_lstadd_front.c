@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayermeko <ayermko@student.42prague.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 16:13:40 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/11/03 15:39:27 by ayermeko         ###   ########.fr       */
+/*   Created: 2023/11/18 18:31:53 by ayermeko          #+#    #+#             */
+/*   Updated: 2023/11/18 18:31:55 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayermeko <ayermko@student.42prague.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 16:07:09 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/10/31 15:23:15 by ayermeko         ###   ########.fr       */
+/*   Created: 2023/11/18 18:37:55 by ayermeko          #+#    #+#             */
+/*   Updated: 2023/11/18 18:37:57 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
